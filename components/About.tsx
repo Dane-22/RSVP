@@ -54,17 +54,26 @@ export default function About() {
             data-about="content"
             className="space-y-6 text-center text-[#fdf6ee]/80"
           >
-            <p className="text-lg leading-relaxed">
-              Two hearts, one story, and a lifetime of adventures ahead. We are
-              thrilled to celebrate our love with you.
+            <p className="leading-relaxed">
+             Welcome to our wedding website!
+            We believe that every beautiful lovve story unfolds according to God's perfect plan, 
+            and ours is a testament to His faithfulness and grace.
             </p>
             <p className="leading-relaxed">
-              Mariane Joy Rillera & Dominic Chica invite you to share in their
-              joy as they begin this beautiful journey together.
+              What began as a chance encounter eventually became a journey filled with long drives,
+              video calls, countless prayers, unwavering support, and dreams shared across the miles.
+              Through every season, God has guided us, strengthened our relationship, and reminded us that true
+              love is built on faith, trust, and commitment
             </p>
             <p className="leading-relaxed">
-              Your presence at our wedding would mean the world to us as we
-              exchange vows and create memories that will last forever.
+              Today, we are grateful to celebrate not only our love, but also the goodness of Godthat has brought us to this moment. 
+              Thank you for being part of our lives and for joining us as we begin this new chapter together
+
+              <br />
+              <br />
+              With love,
+              <br />
+              Mariane & Dominic
             </p>
           </div>
         </div>

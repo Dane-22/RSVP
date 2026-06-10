@@ -36,9 +36,9 @@ export default function DressCode() {
   }, []);
 
   const colors = [
-    { hex: "#C15E63", name: "Burgundy Light" },
-    { hex: "#610B0C", name: "Burgundy Deep" },
-    { hex: "#D49627", name: "Sunflower" },
+    // { hex: "#C15E63", name: "Burgundy Light" },
+    // { hex: "#610B0C", name: "Burgundy Deep" },
+    // { hex: "#D49627", name: "Sunflower" },
     { hex: "#193804", name: "Forest" },
     { hex: "#636B2F", name: "Olive" },
     { hex: "#87AE73", name: "Sage" },
@@ -59,9 +59,41 @@ export default function DressCode() {
             Dress Code
           </h2>
           <div className="gold-divider mb-8" />
-          <p className="mb-8 text-center text-[#fdf6ee]/80">
-            We invite our guests to wear colors from our wedding palette
-          </p>
+          
+          <div className="space-y-6 mb-8">
+            <p className="text-center text-[#fdf6ee]/90 leading-relaxed">
+              As we celebrate amidst nature and beneath the evening sky, we invite our guests to wear <span className="text-[#fdf6ee] font-semibold">garden formal attire</span> in shades from our wedding palette.
+            </p>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center">
+              <div className="bg-[#fdf6ee]/5 rounded-lg p-4">
+                <p className="text-[#fdf6ee]/90 leading-relaxed">
+                  <span className="text-[#fdf6ee] font-semibold">Ladies</span> are encouraged to wear elegant dresses or gowns
+                </p>
+              </div>
+              <div className="bg-[#fdf6ee]/5 rounded-lg p-4">
+                <p className="text-[#fdf6ee]/90 leading-relaxed">
+                  <span className="text-[#fdf6ee] font-semibold">Gentlemen</span> may opt for barongs, suits, blazers, or formal long-sleeved attire
+                </p>
+              </div>
+            </div>
+            
+            <div className="bg-[#fdf6ee]/5 rounded-lg p-4 border-l-4 border-[#C15E63]">
+              <p className="text-[#fdf6ee]/90 leading-relaxed text-sm">
+                To help keep the spotlight on the bride and preserve the beauty of our wedding vision, we kindly request that guests avoid wearing <span className="text-[#fdf6ee] font-semibold">white, ivory, cream, champagne, and other near-white shades</span>.
+              </p>
+            </div>
+            
+            <div className="bg-[#fdf6ee]/5 rounded-lg p-4 border-l-4 border-[#636B2F]">
+              <p className="text-[#fdf6ee]/90 leading-relaxed text-sm">
+                Kindly avoid <span className="text-[#fdf6ee] font-semibold">denim or jeans, shorts, t-shirts or casual tops, slippers, and overly casual footwear</span>.
+              </p>
+            </div>
+            
+            <p className="text-center text-[#fdf6ee]/80 text-sm">
+              We kindly encourage guests to choose solid colors or subtle prints within the suggested palette to complement the overall aesthetic of our celebration.
+            </p>
+          </div>
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
             {colors.map((color) => (
               <div
@@ -69,10 +101,18 @@ export default function DressCode() {
                 data-dresscode="color"
                 className="group flex flex-col items-center"
               >
-                <div
-                  className="mb-3 h-24 w-full rounded-xl shadow-lg transition-transform group-hover:scale-105"
-                  style={{ backgroundColor: color.hex }}
-                />
+                <div className="mb-3 relative h-28 w-full flex items-center justify-center transition-transform group-hover:scale-105">
+                  <svg
+                    viewBox="0 0 100 120"
+                    className="h-full w-full drop-shadow-lg"
+                  >
+                    <path
+                      d="M50 5 C30 25 20 50 25 75 C30 95 40 110 50 115 C60 110 70 95 75 75 C80 50 70 25 50 5 Z"
+                      fill={color.hex}
+                      className="transition-opacity group-hover:opacity-90"
+                    />
+                  </svg>
+                </div>
                 <span className="text-xs uppercase tracking-wider text-[#fdf6ee]/70">
                   {color.name}
                 </span>

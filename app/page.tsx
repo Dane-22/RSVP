@@ -3,10 +3,10 @@ import Contact from "@/components/Contact";
 import DressCode from "@/components/DressCode";
 import FallingBackground from "@/components/FallingBackground";
 import Hero from "@/components/Hero";
-import Program from "@/components/Program";
 import RSVPForm from "@/components/RSVPForm";
 import Story from "@/components/Story";
 import Venue from "@/components/Venue";
+import WeddingReminders from "@/components/WeddingReminders";
 
 export default function Home() {
   return (
@@ -16,8 +16,8 @@ export default function Home() {
       <About />
       <Story />
       <Venue />
-      <Program />
       <DressCode />
+      <WeddingReminders />
       <RSVPForm />
       <Contact />
     </main>

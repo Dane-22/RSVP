@@ -58,7 +58,7 @@ export default function Venue() {
               <h3 className="font-serif text-2xl text-[#D49627]">
                 Santol Tree Park
               </h3>
-              <p className="text-lg">La Union, Philippines</p>
+              <p className="text-lg">Santol, La Union, Philippines, 2516</p>
             </div>
             <div className="gold-divider my-6" />
             <div className="grid gap-6 sm:grid-cols-2">
@@ -72,7 +72,7 @@ export default function Venue() {
                 <p className="text-sm uppercase tracking-wider text-[#D49627]">
                   Time
                 </p>
-                <p className="text-lg font-semibold">4:00 PM</p>
+                <p className="text-lg font-semibold">3:30 PM</p>
               </div>
             </div>
             <p className="pt-4 leading-relaxed">
