@@ -58,7 +58,7 @@ export default function About() {
              Welcome to our wedding website!
              </p>
              <p className="leading-relaxed text-[#ffffff]">
-            We believe that every beautiful love story unfolds according to God's perfect plan. Through years of love, faith, and shared memories, He has guided us every step of the way.
+            We believe that every beautiful love story unfolds according to God&apos;s perfect plan. Through years of love, faith, and shared memories, He has guided us every step of the way.
             </p>
             <p className="leading-relaxed text-[#ffffff]">
               As we prepare to begin this new chapter together, we are grateful to celebrate with the people who have supported and loved us throughout our journey.
