@@ -176,7 +176,7 @@ export default function RSVPForm() {
               </select>
             </FormField>
 
-            <FormField label="Message for the Couple" htmlFor="message">
+            <FormField label="Leave us a Message" htmlFor="message">
               <textarea
                 id="message"
                 name="message"

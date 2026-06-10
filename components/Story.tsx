@@ -97,7 +97,7 @@ export default function Story() {
                   )}
                 </div>
                 <div className="space-y-2">
-                  <span className="inline-block text-sm font-semibold uppercase tracking-wider text-[#FFFFFF]">
+                  <span className="inline-block text-lg sm:text-xl font-serif font-bold uppercase tracking-wider text-[#EFCC74]">
                     {milestone.year}
                   </span>
                   {milestone.title && (

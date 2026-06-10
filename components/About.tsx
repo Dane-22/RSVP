@@ -68,9 +68,9 @@ export default function About() {
 
               <br />
               <br />
-              With Love,
+              <span className="italic text-[#EFCC74]">With Love,</span>
               <br />
-              Mariane & Dominic
+              <span className="text-[#EFCC74]">Mariane & Dominic</span>
             </p>
           </div>
         </div>

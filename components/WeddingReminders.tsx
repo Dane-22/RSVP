@@ -37,22 +37,22 @@ export default function WeddingReminders() {
 
   const reminders = [
     {
-      title: "Children Policy",
+      title: "Adults only Celebration",
       icon: "👶",
       content:
-        "While we adore your little ones, we respectfully request an adults-only celebration. We hope this advance notice allows you to make arrangements and join us on our special day.",
+        "We respectfully request an adults-only celebration.",
     },
     {
       title: "Unplugged Ceremony",
       icon: "📵",
       content:
-        "We kindly request that all guests refrain from using phones, cameras, and other devices during the ceremony. Our professional photographers will capture these precious moments, allowing everyone to be fully present with us.",
+        "We kindly request that all guests refrain from using phones, cameras, and other devices during the ceremony. Please be present with us in this special moment.",
     },
     {
       title: "Gift Note",
       icon: "🎁",
       content:
-        "Your love, laughter, and presence on our wedding day are the greatest gifts we could ask for. However, should you wish to honor us with a gift, a monetary contribution towards our future together would be sincerely appreciated.",
+        "Your presence is the greatest gift. Should you wish to bless us further, a monetary gift would be sincerely appreciated.",
     },
   ];
 
@@ -76,15 +76,15 @@ export default function WeddingReminders() {
               <div
                 key={index}
                 data-reminders="card"
-                className="rounded-xl bg-[#fdf6ee]/5 p-6 backdrop-blur-sm border border-[#D49627]/20"
+                className="rounded-xl bg-[#ffffff]/5 p-6 backdrop-blur-sm border border-[#D49627]/20"
               >
                 <div className="flex items-start gap-4">
                   <span className="text-3xl">{reminder.icon}</span>
                   <div className="flex-1">
-                    <h3 className="font-serif mb-2 text-xl text-[#D49627]">
+                    <h3 className="font-serif font-semibold mb-2 text-xl text-[#D49627]">
                       {reminder.title}
                     </h3>
-                    <p className="leading-relaxed text-[#fdf6ee]/80">
+                    <p className="leading-relaxed text-[#ffffff]/80">
                       {reminder.content}
                     </p>
                   </div>
@@ -92,6 +92,9 @@ export default function WeddingReminders() {
               </div>
             ))}
           </div>
+          <p className="mt-8 text-center italic text-[#ffffff]/80">
+            Thank you for being part of our love story
+          </p>
         </div>
       </div>
     </section>
