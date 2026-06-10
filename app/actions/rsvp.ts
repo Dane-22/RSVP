@@ -1,39 +1,7 @@
 "use server";
 
-import { google } from "googleapis";
 import { normalizeContact, validateRSVPForm } from "@/lib/validators";
 import type { RSVPActionResult, RSVPFormData } from "@/types/rsvp";
-
-const SHEET_HEADERS = [
-  "Timestamp",
-  "Name",
-  "Email",
-  "Contact",
-  "Attendance",
-  "Message",
-] as const;
-
-function getGoogleSheetsClient() {
-  const clientEmail = process.env.GOOGLE_CLIENT_EMAIL;
-  const privateKey = process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n");
-  const sheetId = process.env.GOOGLE_SHEET_ID;
-
-  if (!clientEmail || !privateKey || !sheetId) {
-    throw new Error(
-      "Missing Google Sheets configuration. Check GOOGLE_CLIENT_EMAIL, GOOGLE_PRIVATE_KEY, and GOOGLE_SHEET_ID.",
-    );
-  }
-
-  const auth = new google.auth.JWT({
-    email: clientEmail,
-    key: privateKey,
-    scopes: ["https://www.googleapis.com/auth/spreadsheets"],
-  });
-
-  const sheets = google.sheets({ version: "v4", auth });
-
-  return { sheets, sheetId };
-}
 
 function formatAttendance(attendance: RSVPFormData["attendance"]): string {
   return attendance === "yes" ? "Yes, Attending" : "No, Regretfully Decline";
@@ -47,27 +15,39 @@ export async function submitRSVP(
     return { success: false, message: validationError };
   }
 
+  const appsScriptUrl = process.env.APPS_SCRIPT_URL;
+
+  if (!appsScriptUrl) {
+    return {
+      success: false,
+      message: "Server configuration error. Missing Apps Script URL.",
+    };
+  }
+
   try {
-    const { sheets, sheetId } = getGoogleSheetsClient();
-
-    const row = [
-      new Date().toISOString(),
-      formData.name.trim(),
-      formData.email.trim().toLowerCase(),
-      normalizeContact(formData.contact),
-      formatAttendance(formData.attendance),
-      formData.message.trim(),
-    ];
-
-    await sheets.spreadsheets.values.append({
-      spreadsheetId: sheetId,
-      range: "Sheet1!A:F",
-      valueInputOption: "USER_ENTERED",
-      insertDataOption: "INSERT_ROWS",
-      requestBody: {
-        values: [row],
+    const response = await fetch(appsScriptUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
       },
+      body: JSON.stringify({
+        name: formData.name.trim(),
+        email: formData.email.trim().toLowerCase(),
+        contact: normalizeContact(formData.contact),
+        attendance: formData.attendance,
+        message: formData.message.trim(),
+      }),
     });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const result = await response.json();
+
+    if (!result.success) {
+      throw new Error(result.error || "Unknown error from Apps Script");
+    }
 
     return {
       success: true,
@@ -83,25 +63,5 @@ export async function submitRSVP(
       message:
         "Something went wrong while saving your RSVP. Please try again in a moment.",
     };
-  }
-}
-
-export async function ensureSheetHeaders(): Promise<void> {
-  const { sheets, sheetId } = getGoogleSheetsClient();
-
-  const existing = await sheets.spreadsheets.values.get({
-    spreadsheetId: sheetId,
-    range: "Sheet1!A1:F1",
-  });
-
-  if (!existing.data.values?.length) {
-    await sheets.spreadsheets.values.update({
-      spreadsheetId: sheetId,
-      range: "Sheet1!A1:F1",
-      valueInputOption: "USER_ENTERED",
-      requestBody: {
-        values: [[...SHEET_HEADERS]],
-      },
-    });
   }
 }
