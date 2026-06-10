@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   title: "Mariane Joy & Dominic | Wedding Invitation",
   description:
     "Join Mariane Joy Rillera and Dominic Chica as they celebrate their wedding on December 19, 2026 at Santol Tree Park, La Union.",
+  icons: {
+    icon: "/monogram.svg",
+    shortcut: "/monogram.svg",
+    apple: "/monogram.svg",
+  },
   openGraph: {
     title: "Mariane Joy & Dominic — Wedding Invitation",
     description: "December 19, 2026 · Santol Tree Park, La Union",
