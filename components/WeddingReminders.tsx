@@ -66,7 +66,7 @@ export default function WeddingReminders() {
         <div className="glass-panel rounded-2xl p-8 sm:p-12">
           <h2
             data-reminders="title"
-            className="font-serif mb-8 text-center text-3xl sm:text-4xl text-[#fdf6ee]"
+            className="font-serif mb-8 text-center text-3xl sm:text-4xl text-[#EFCC74]"
           >
             Wedding Reminders
           </h2>

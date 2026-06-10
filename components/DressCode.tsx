@@ -54,43 +54,43 @@ export default function DressCode() {
         <div className="glass-panel rounded-2xl p-8 sm:p-12">
           <h2
             data-dresscode="title"
-            className="font-serif mb-8 text-center text-3xl sm:text-4xl text-[#fdf6ee]"
+            className="font-serif mb-8 text-center text-3xl sm:text-4xl text-[#EFCC74]"
           >
             Dress Code
           </h2>
           <div className="gold-divider mb-8" />
           
           <div className="space-y-6 mb-8">
-            <p className="text-center text-[#fdf6ee]/90 leading-relaxed">
-              As we celebrate amidst nature and beneath the evening sky, we invite our guests to wear <span className="text-[#fdf6ee] font-semibold">garden formal attire</span> in shades from our wedding palette.
+            <p className="text-center text-[#ffffff]/90 leading-relaxed">
+              As we celebrate amidst nature and beneath the evening sky, we invite our guests to wear <span className="text-[#ffffff] font-semibold">garden formal attire</span> in shades from our wedding palette.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center">
-              <div className="bg-[#fdf6ee]/5 rounded-lg p-4">
-                <p className="text-[#fdf6ee]/90 leading-relaxed">
-                  <span className="text-[#fdf6ee] font-semibold">Ladies</span> are encouraged to wear elegant dresses or gowns
+              <div className="bg-[#ffffff]/5 rounded-lg p-4">
+                <p className="text-[#ffffff]/90 leading-relaxed">
+                  <span className="text">Ladies</span> are encouraged to wear elegant dresses or gowns
                 </p>
               </div>
-              <div className="bg-[#fdf6ee]/5 rounded-lg p-4">
-                <p className="text-[#fdf6ee]/90 leading-relaxed">
-                  <span className="text-[#fdf6ee] font-semibold">Gentlemen</span> may opt for barongs, suits, blazers, or formal long-sleeved attire
+              <div className="bg-[#ffffff]/5 rounded-lg p-4">
+                <p className="text-[#ffffff]/90 leading-relaxed">
+                  <span className="text">Gentlemen</span> may opt for barongs, suits, blazers, or formal long-sleeved attire
                 </p>
               </div>
             </div>
             
-            <div className="bg-[#fdf6ee]/5 rounded-lg p-4 border-l-4 border-[#C15E63]">
-              <p className="text-[#fdf6ee]/90 leading-relaxed text-sm">
-                To help keep the spotlight on the bride and preserve the beauty of our wedding vision, we kindly request that guests avoid wearing <span className="text-[#fdf6ee] font-semibold">white, ivory, cream, champagne, and other near-white shades</span>.
+            <div className="bg-[#ffffff]/5 rounded-lg p-4 border-l-4 border-[#C15E63]">
+              <p className="text-[#ffffff]/90 leading-relaxed text-sm">
+                To help keep the spotlight on the bride and preserve the beauty of our wedding vision, we kindly request that guests avoid wearing <span className="text">white, ivory, cream, champagne, and other near-white shades</span>.
               </p>
             </div>
             
-            <div className="bg-[#fdf6ee]/5 rounded-lg p-4 border-l-4 border-[#636B2F]">
-              <p className="text-[#fdf6ee]/90 leading-relaxed text-sm">
-                Kindly avoid <span className="text-[#fdf6ee] font-semibold">denim or jeans, shorts, t-shirts or casual tops, slippers, and overly casual footwear</span>.
+            <div className="bg-[#ffffff]/5 rounded-lg p-4 border-l-4 border-[#636B2F]">
+              <p className="text-[#ffffff]/90 leading-relaxed text-sm">
+                Kindly avoid <span className="text">denim or jeans, shorts, t-shirts or casual tops, slippers, and overly casual footwear</span>.
               </p>
             </div>
             
-            <p className="text-center text-[#fdf6ee]/80 text-sm">
+            <p className="text-center text-[#ffffff]/80 text-sm">
               We kindly encourage guests to choose solid colors or subtle prints within the suggested palette to complement the overall aesthetic of our celebration.
             </p>
           </div>
@@ -113,10 +113,10 @@ export default function DressCode() {
                     />
                   </svg>
                 </div>
-                <span className="text-xs uppercase tracking-wider text-[#fdf6ee]/70">
+                <span className="text-xs uppercase tracking-wider text-[#ffffff]/70">
                   {color.name}
                 </span>
-                <span className="text-xs font-mono text-[#fdf6ee]/50">
+                <span className="text-xs font-mono text-[#ffffff]/50">
                   {color.hex}
                 </span>
               </div>

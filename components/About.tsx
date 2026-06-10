@@ -45,33 +45,30 @@ export default function About() {
         <div className="glass-panel rounded-2xl p-8 sm:p-12">
           <h2
             data-about="title"
-            className="font-serif mb-8 text-center text-3xl sm:text-4xl text-[#fdf6ee]"
+            className="font-serif mb-8 text-center text-3xl sm:text-4xl text-[#EFCC74]"
           >
             About Us
           </h2>
           <div className="gold-divider mb-8" />
           <div
             data-about="content"
-            className="space-y-6 text-center text-[#fdf6ee]/80"
+            className="space-y-6 text-center text-[#ffffff]/80"
           >
-            <p className="leading-relaxed">
+            <p className="leading-relaxed text-[#ffffff]">
              Welcome to our wedding website!
-            We believe that every beautiful lovve story unfolds according to God&apos;s perfect plan, 
-            and ours is a testament to His faithfulness and grace.
+             </p>
+             <p className="leading-relaxed text-[#ffffff]">
+            We believe that every beautiful love story unfolds according to God's perfect plan. Through years of love, faith, and shared memories, He has guided us every step of the way.
             </p>
-            <p className="leading-relaxed">
-              What began as a chance encounter eventually became a journey filled with long drives,
-              video calls, countless prayers, unwavering support, and dreams shared across the miles.
-              Through every season, God has guided us, strengthened our relationship, and reminded us that true
-              love is built on faith, trust, and commitment
+            <p className="leading-relaxed text-[#ffffff]">
+              As we prepare to begin this new chapter together, we are grateful to celebrate with the people who have supported and loved us throughout our journey.
             </p>
-            <p className="leading-relaxed">
-              Today, we are grateful to celebrate not only our love, but also the goodness of Godthat has brought us to this moment. 
-              Thank you for being part of our lives and for joining us as we begin this new chapter together
+            <p className="leading-relaxed text-[#ffffff]">
+              Thank you for being part of our story.
 
               <br />
               <br />
-              With love,
+              With Love,
               <br />
               Mariane & Dominic
             </p>

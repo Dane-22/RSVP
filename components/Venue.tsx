@@ -45,7 +45,7 @@ export default function Venue() {
         <div className="glass-panel rounded-2xl p-8 sm:p-12">
           <h2
             data-venue="title"
-            className="font-serif mb-8 text-center text-3xl sm:text-4xl text-[#fdf6ee]"
+            className="font-serif mb-8 text-center text-3xl sm:text-4xl text-[#EFCC74]"
           >
             Venue
           </h2>
@@ -58,7 +58,7 @@ export default function Venue() {
               <h3 className="font-serif text-2xl text-[#D49627]">
                 Santol Tree Park
               </h3>
-              <p className="text-lg">Santol, La Union, Philippines, 2516</p>
+              <p className="text-lg text-[#ffffff]">Santol, La Union, Philippines, 2516</p>
             </div>
             <div className="gold-divider my-6" />
             <div className="grid gap-6 sm:grid-cols-2">
@@ -66,16 +66,16 @@ export default function Venue() {
                 <p className="text-sm uppercase tracking-wider text-[#D49627]">
                   Date
                 </p>
-                <p className="text-lg font-semibold">December 19, 2026</p>
+                <p className="text-lg text-[#ffffff]">December 19, 2026</p>
               </div>
               <div className="space-y-2">
                 <p className="text-sm uppercase tracking-wider text-[#D49627]">
                   Time
                 </p>
-                <p className="text-lg font-semibold">3:30 PM</p>
+                <p className="text-lg text-[#ffffff]">3:30 PM</p>
               </div>
             </div>
-            <p className="pt-4 leading-relaxed">
+            <p className="pt-4 leading-relaxed text-[#ffffff]">
               Join us at the beautiful Santol Tree Park in La Union for our
               special celebration. Surrounded by nature&apos;s beauty, we&apos;ll exchange
               vows and begin our new chapter together.

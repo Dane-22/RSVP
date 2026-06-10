@@ -37,19 +37,34 @@ export default function Story() {
 
   const milestones = [
     {
-      year: "First Meeting",
-      title: "Where It All Began",
-      description: "Our paths crossed and sparks flew instantly",
+      year: "September 2016",
+      title: "",
+      description: "Our paths crossed during a leadership training and seminar though VKLV",
     },
     {
-      year: "The Proposal",
-      title: "A Perfect Moment",
-      description: "On a beautiful day, he asked and she said yes",
+      year: "November 2016",
+      title: "",
+      description: "What started as friendship became something more",
     },
     {
-      year: "Forever",
-      title: "Our Wedding Day",
-      description: "December 19, 2026 - The start of our forever",
+      year: "January 13, 2027",
+      title: "",
+      description: "We officially became a couple",
+    },
+    {
+      year: "The Years Between",
+      title: "",
+      description: "From veterinary student to licensed veterinarians, we grew together through life's milestones, challenges, and blessing.",
+    },
+    {
+      year: "She said Yes",
+      title: "",
+      description: "The beginning of our next chapter",
+    },
+    {
+      year: "December 19, 2026",
+      title: "",
+      description: "Our forever begins",
     },
   ];
 
@@ -63,7 +78,7 @@ export default function Story() {
         <div className="glass-panel rounded-2xl p-8 sm:p-12">
           <h2
             data-story="title"
-            className="font-serif mb-8 text-center text-3xl sm:text-4xl text-[#fdf6ee]"
+            className="font-serif mb-8 text-center text-3xl sm:text-4xl text-[#EFCC74]"
           >
             Our Love Story
           </h2>
@@ -82,13 +97,15 @@ export default function Story() {
                   )}
                 </div>
                 <div className="space-y-2">
-                  <span className="inline-block text-sm font-semibold uppercase tracking-wider text-[#D49627]">
+                  <span className="inline-block text-sm font-semibold uppercase tracking-wider text-[#FFFFFF]">
                     {milestone.year}
                   </span>
-                  <h3 className="font-serif text-xl text-[#fdf6ee]">
-                    {milestone.title}
-                  </h3>
-                  <p className="text-[#fdf6ee]/70">{milestone.description}</p>
+                  {milestone.title && (
+                    <h3 className="font-serif text-xl text-[#FFFFFF]">
+                      {milestone.title}
+                    </h3>
+                  )}
+                  <p className="text-[#FFFFFF]">{milestone.description}</p>
                 </div>
               </div>
             ))}
