@@ -56,7 +56,7 @@ export default function About() {
           >
             <p className="leading-relaxed">
              Welcome to our wedding website!
-            We believe that every beautiful lovve story unfolds according to God's perfect plan, 
+            We believe that every beautiful lovve story unfolds according to God&apos;s perfect plan, 
             and ours is a testament to His faithfulness and grace.
             </p>
             <p className="leading-relaxed">

@@ -3,10 +3,6 @@
 import { normalizeContact, validateRSVPForm } from "@/lib/validators";
 import type { RSVPActionResult, RSVPFormData } from "@/types/rsvp";
 
-function formatAttendance(attendance: RSVPFormData["attendance"]): string {
-  return attendance === "yes" ? "Yes, Attending" : "No, Regretfully Decline";
-}
-
 export async function submitRSVP(
   formData: RSVPFormData,
 ): Promise<RSVPActionResult> {
