@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-burgundy-light: #c15e63;
+  --color-burgundy-deep: #610b0c;
+  --color-sunflower: #d49627;
+  --color-forest: #193804;
+  --font-serif: var(--font-cormorant);
+  --font-sans: var(--font-jost);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans), system-ui, sans-serif;
+  color: #fdf6ee;
+  background: linear-gradient(
+    180deg,
+    #610b0c 0%,
+    #c15e63 45%,
+    #193804 100%
+  );
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(212, 150, 39, 0.45);
+  color: #fff8ef;
+}
+
+.font-serif {
+  font-family: var(--font-serif), "Cormorant Garamond", Georgia, serif;
+}
+
+.glass-panel {
+  background: rgba(97, 11, 12, 0.35);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(212, 150, 39, 0.28);
+  box-shadow:
+    0 24px 60px rgba(25, 56, 4, 0.25),
+    inset 0 1px 0 rgba(255, 248, 239, 0.08);
+}
+
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(212, 150, 39, 0.85),
+    transparent
+  );
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    #fdf6ee 0%,
+    #d49627 45%,
+    #fdf6ee 90%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 8s linear infinite;
+}
