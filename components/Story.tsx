@@ -39,7 +39,7 @@ export default function Story() {
     {
       year: "September 2016",
       title: "",
-      description: "Our paths crossed during a leadership training and seminar though the VKLV.",
+      description: "Our paths crossed during a leadership training and seminar through the VKLV.",
     },
     {
       year: "November 2016",
@@ -52,7 +52,7 @@ export default function Story() {
       description: "We officially became a couple.",
     },
     {
-      year: "The Years Between",
+      year: "In The Years Between",
       title: "",
       description: "From veterinary students to licensed veterinarians, we grew together through life's milestones, challenges, and blessing.",
     },

@@ -28,7 +28,7 @@ export async function submitRSVP(
       },
       body: JSON.stringify({
         name: formData.name.trim(),
-        email: formData.email.trim().toLowerCase(),
+        email: formData.email?.trim().toLowerCase() || "",
         contact: normalizeContact(formData.contact),
         attendance: formData.attendance,
         message: formData.message.trim(),

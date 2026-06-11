@@ -55,7 +55,7 @@ export default function Venue() {
             className="space-y-6 text-center text-[#fdf6ee]/80"
           >
             <div className="space-y-2">
-              <h3 className="font-serif text-2xl text-[#D49627]">
+              <h3 className="text-lg text-[#ffffff]">
                 Santol Tree Park
               </h3>
               <p className="text-lg text-[#ffffff]">Santol, La Union, Philippines, 2516</p>

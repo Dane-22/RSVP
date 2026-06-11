@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Jost } from "next/font/google";
 import "./globals.css";
+import MusicPlayer from "@/components/MusicPlayer";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -45,7 +46,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${cormorant.variable} ${jost.variable}`}>
-      <body className="antialiased" suppressHydrationWarning>{children}</body>
+      <body className="antialiased" suppressHydrationWarning>
+        {children}
+        <MusicPlayer />
+      </body>
     </html>
   );
 }

@@ -2,7 +2,7 @@ export type AttendanceOption = "yes" | "no";
 
 export interface RSVPFormData {
   name: string;
-  email: string;
+  email?: string;
   contact: string;
   attendance: AttendanceOption;
   message: string;

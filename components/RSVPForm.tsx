@@ -8,7 +8,7 @@ import type { AttendanceOption, RSVPFormData, RSVPSubmitState } from "@/types/rs
 
 const initialForm: RSVPFormData = {
   name: "",
-  email: "",
+  // email: "",
   contact: "",
   attendance: "yes",
   message: "",
@@ -129,7 +129,7 @@ export default function RSVPForm() {
               />
             </FormField>
 
-            <FormField label="Email Address" htmlFor="email">
+            {/* <FormField label="Email Address" htmlFor="email">
               <input
                 id="email"
                 name="email"
@@ -141,7 +141,7 @@ export default function RSVPForm() {
                 className={inputClass}
                 placeholder="you@email.com"
               />
-            </FormField>
+            </FormField> */}
 
             <FormField label="Contact Number" htmlFor="contact">
               <input

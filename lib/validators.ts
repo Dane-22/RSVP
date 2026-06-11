@@ -7,13 +7,15 @@ export function validateRSVPForm(data: RSVPFormData): string | null {
     return "Please enter your full name.";
   }
 
-  if (!data.email.trim()) {
+  if (data.email && !data.email.trim()) {
     return "Please enter your email address.";
   }
 
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  if (!emailRegex.test(data.email.trim())) {
-    return "Please enter a valid email address.";
+  if (data.email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(data.email.trim())) {
+      return "Please enter a valid email address.";
+    }
   }
 
   const normalizedContact = data.contact.replace(/\s|-/g, "");

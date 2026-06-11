@@ -32,7 +32,7 @@ function doPost(e) {
     const rowData = [
       new Date().toISOString(),
       data.name.trim(),
-      data.email.trim().toLowerCase(),
+      data.email ? data.email.trim().toLowerCase() : "",
       data.contact.trim(),
       attendance,
       data.message.trim()

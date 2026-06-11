@@ -80,11 +80,11 @@ export default function DressCode() {
 
     // { hex: "#D49627", name: "Sunflower" },
 
-    { hex: "#193804", name: "Forest" },
+    { hex: "#193804", name: "Forest", image: undefined },
 
-    { hex: "#636B2F", name: "Olive" },
+    { hex: "#636B2F", name: "Olive", image: undefined },
 
-    { hex: "#87AE73", name: "Sage" },
+    { hex: "#87AE73", name: "Sage", image: undefined },
 
   ];
 
@@ -132,9 +132,10 @@ export default function DressCode() {
 
                   <div className="h-24 w-24 rounded-full border-2 border-[#D49627] bg-[#610B0C]/30 flex items-center justify-center overflow-hidden">
 
-                    {/* Replace with actual image: <img src="/path/to/ladies-dress.jpg" alt="Ladies dress" className="h-full w-full object-cover" /> */}
+                    {/* Replace with actual image: */}
+                     <img src="/gown.png" alt="Ladies dress" className="h-full w-full object-cover" />
 
-                    <span className="text-xs text-[#D49627]/60">Image</span>
+                    {/* <span className="text-xs text-[#D49627]/60">Image</span> */}
 
                   </div>
 
@@ -166,9 +167,10 @@ export default function DressCode() {
 
                   <div className="h-24 w-24 rounded-full border-2 border-[#D49627] bg-[#610B0C]/30 flex items-center justify-center overflow-hidden">
 
-                    {/* Replace with actual image: <img src="/path/to/gentlemen-barong.jpg" alt="Gentlemen barong" className="h-full w-full object-cover" /> */}
+                    {/* Replace with actual image: */}
+                     <img src="/barong.png" alt="Gentlemen barong" className="h-full w-full object-cover" />
 
-                    <span className="text-xs text-[#D49627]/60">Image</span>
+                    {/* <span className="text-xs text-[#D49627]/60">Image</span> */}
 
                   </div>
 
@@ -200,9 +202,10 @@ export default function DressCode() {
 
                   <div className="h-24 w-24 rounded-full border-2 border-[#C15E63] bg-[#610B0C]/30 flex items-center justify-center overflow-hidden">
 
-                    {/* Replace with actual image: <img src="/path/to/avoid-items.jpg" alt="Items to avoid" className="h-full w-full object-cover" /> */}
+                    {/* Replace with actual image:  */}
+                    <img src="/avoid.png" alt="Items to avoid" className="h-full w-full object-cover" />
 
-                    <span className="text-xs text-[#C15E63]/60">Image</span>
+                    {/* <span className="text-xs text-[#C15E63]/60">Image</span> */}
 
                   </div>
 
@@ -246,25 +249,24 @@ export default function DressCode() {
 
                 <div className="mb-3 relative h-28 w-full flex items-center justify-center transition-transform group-hover:scale-105">
 
-                  <svg
-
-                    viewBox="0 0 100 120"
-
-                    className="h-full w-full drop-shadow-lg"
-
-                  >
-
-                    <path
-
-                      d="M50 5 C30 25 20 50 25 75 C30 95 40 110 50 115 C60 110 70 95 75 75 C80 50 70 25 50 5 Z"
-
-                      fill={color.hex}
-
-                      className="transition-opacity group-hover:opacity-90"
-
+                  {color.image ? (
+                    <img
+                      src={color.image}
+                      alt={color.name}
+                      className="h-full w-full object-cover rounded-lg"
                     />
-
-                  </svg>
+                  ) : (
+                    <svg
+                      viewBox="0 0 100 120"
+                      className="h-full w-full drop-shadow-lg"
+                    >
+                      <path
+                        d="M50 5 C30 25 20 50 25 75 C30 95 40 110 50 115 C60 110 70 95 75 75 C80 50 70 25 50 5 Z"
+                        fill={color.hex}
+                        className="transition-opacity group-hover:opacity-90"
+                      />
+                    </svg>
+                  )}
 
                 </div>
 

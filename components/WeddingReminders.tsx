@@ -40,16 +40,19 @@ export default function WeddingReminders() {
       title: "Adults only Celebration",
       content:
         "We respectfully request an adults-only celebration.",
+      image: "/adults_only.png",
     },
     {
       title: "Unplugged Ceremony",
       content:
         "We kindly request that all guests refrain from using phones, cameras, and other devices during the ceremony. Please be present with us in this special moment.",
+      image: "/unplugged.png",
     },
     {
       title: "Gift Note",
       content:
         "Your presence is the greatest gift. Should you wish to bless us further, a monetary gift would be sincerely appreciated.",
+      image: "/gift_note.png",
     },
   ];
 
@@ -79,7 +82,7 @@ export default function WeddingReminders() {
                   <div className="flex-shrink-0">
                     <div className="h-14 w-14 rounded-full border-2 border-[#D49627] bg-[#610B0C]/30 flex items-center justify-center overflow-hidden">
                       <img
-                        src={undefined}
+                        src={reminder.image}
                         alt={reminder.title}
                         className="h-full w-full object-cover"
                       />
