@@ -38,19 +38,16 @@ export default function WeddingReminders() {
   const reminders = [
     {
       title: "Adults only Celebration",
-      icon: "👶",
       content:
         "We respectfully request an adults-only celebration.",
     },
     {
       title: "Unplugged Ceremony",
-      icon: "📵",
       content:
         "We kindly request that all guests refrain from using phones, cameras, and other devices during the ceremony. Please be present with us in this special moment.",
     },
     {
       title: "Gift Note",
-      icon: "🎁",
       content:
         "Your presence is the greatest gift. Should you wish to bless us further, a monetary gift would be sincerely appreciated.",
     },
@@ -79,7 +76,15 @@ export default function WeddingReminders() {
                 className="rounded-xl bg-[#ffffff]/5 p-6 backdrop-blur-sm border border-[#D49627]/20"
               >
                 <div className="flex items-start gap-4">
-                  <span className="text-3xl">{reminder.icon}</span>
+                  <div className="flex-shrink-0">
+                    <div className="h-14 w-14 rounded-full border-2 border-[#D49627] bg-[#610B0C]/30 flex items-center justify-center overflow-hidden">
+                      <img
+                        src=""
+                        alt={reminder.title}
+                        className="h-full w-full object-cover"
+                      />
+                    </div>
+                  </div>
                   <div className="flex-1">
                     <h3 className="font-serif font-semibold mb-2 text-xl text-[#D49627]">
                       {reminder.title}
