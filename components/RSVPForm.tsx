@@ -181,8 +181,8 @@ export default function RSVPForm() {
                 }
                 className={inputClass}
               >
-                <option value="yes">Yes, I'll be there</option>
-                <option value="no">No, I'm sorry</option>
+                <option value="yes">Yes, I&apos;ll be there</option>
+                <option value="no">No, I&apos;m sorry</option>
               </select>
             </FormField>
 
