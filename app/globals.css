@@ -1,10 +1,13 @@
 @import "tailwindcss";
 
+/* eslint-disable-next-line */
+/* @ts-ignore */
 @theme inline {
   --color-burgundy-light: #c15e63;
   --color-burgundy-deep: #610b0c;
   --color-sunflower: #d49627;
   --color-forest: #193804;
+
   --color-olive: #636b2f;
   --color-sage: #87ae73;
   --font-serif: var(--font-cormorant);

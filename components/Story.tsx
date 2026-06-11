@@ -39,27 +39,27 @@ export default function Story() {
     {
       year: "September 2016",
       title: "",
-      description: "Our paths crossed during a leadership training and seminar though VKLV",
+      description: "Our paths crossed during a leadership training and seminar though the VKLV.",
     },
     {
       year: "November 2016",
       title: "",
-      description: "What started as friendship became something more",
+      description: "What started as friendship became something more.",
     },
     {
       year: "January 13, 2027",
       title: "",
-      description: "We officially became a couple",
+      description: "We officially became a couple.",
     },
     {
       year: "The Years Between",
       title: "",
-      description: "From veterinary student to licensed veterinarians, we grew together through life's milestones, challenges, and blessing.",
+      description: "From veterinary students to licensed veterinarians, we grew together through life's milestones, challenges, and blessing.",
     },
     {
       year: "She said Yes",
       title: "",
-      description: "The beginning of our next chapter",
+      description: "The beginning of our next chapter.",
     },
     {
       year: "December 19, 2026",
