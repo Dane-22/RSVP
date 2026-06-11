@@ -76,8 +76,8 @@ export default function Venue() {
               </div>
             </div>
             <p className="pt-4 leading-relaxed text-[#ffffff]">
-              Join us at the beautiful Santol Tree Park in La Union for our
-              special celebration. Surrounded by nature&apos;s beauty, we&apos;ll exchange
+              Join us on our
+              special celebration surrounded by nature&apos;s beauty, we&apos;ll exchange
               vows and begin our new chapter together.
             </p>
           </div>

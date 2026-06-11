@@ -97,15 +97,25 @@ export default function RSVPForm() {
     >
       <div className="mx-auto max-w-2xl">
         <div data-rsvp="reveal" className="mb-10 text-center">
-          <p className="mb-3 text-xs tracking-[0.4em] text-[#D49627] uppercase">
-            Kindly Respond
-          </p>
-          <h2 className="font-serif text-4xl font-light sm:text-5xl">
+          <h2 className="font-serif text-4xl font-light sm:text-5xl text-[#EFCC74] mb-4">
             RSVP
           </h2>
-          <p className="mt-4 text-sm leading-relaxed text-[#fdf6ee]/80 sm:text-base">
-            We would be honored by your presence. Please share your response
-            below so we may prepare with love.
+          <div className="gold-divider mx-auto mb-6 max-w-xs" />
+          <p className="mt-4 text-sm leading-relaxed text-[#fdf6ee]/90 sm:text-base mb-6">
+            We would be honored to celebrate with you
+          </p>
+          <p className="text-sm leading-relaxed text-[#fdf6ee]/80 sm:text-base mb-2">
+            Please respond on or Before
+          </p>
+          <p className="font-serif text-lg sm:text-xl text-[#EFCC74] mb-4">
+            OCTOBER 31, 2026
+          </p>
+          <p className="text-xs tracking-[0.3em] text-[#EFCC74] uppercase mb-6">
+            WE HAVE RESERVED 1 SEAT IN YOUR HONOR
+          </p>
+          <div className="gold-divider mx-auto mb-6 max-w-xs" />
+          <p className="text-sm leading-relaxed text-[#fdf6ee]/80 sm:text-base">
+            We can't wait to celebrate with you!
           </p>
         </div>
 

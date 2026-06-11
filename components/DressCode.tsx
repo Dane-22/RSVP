@@ -80,11 +80,11 @@ export default function DressCode() {
 
     // { hex: "#D49627", name: "Sunflower" },
 
-    { hex: "#193804", name: "Forest", image: undefined },
+    { hex: "#193804", name: "Forest", image: "/forest.png" },
 
-    { hex: "#636B2F", name: "Olive", image: undefined },
+    { hex: "#636B2F", name: "Olive", image: "/olive.png" },
 
-    { hex: "#87AE73", name: "Sage", image: undefined },
+    { hex: "#87AE73", name: "Sage", image: "/sage.png" },
 
   ];
 
@@ -133,7 +133,7 @@ export default function DressCode() {
                   <div className="h-24 w-24 rounded-full border-2 border-[#D49627] bg-[#610B0C]/30 flex items-center justify-center overflow-hidden">
 
                     {/* Replace with actual image: */}
-                     <img src="/gown.png" alt="Ladies dress" className="h-full w-full object-cover" />
+                     <img src="/1.png" alt="Ladies dress" className="h-full w-full object-cover" />
 
                     {/* <span className="text-xs text-[#D49627]/60">Image</span> */}
 
@@ -168,7 +168,7 @@ export default function DressCode() {
                   <div className="h-24 w-24 rounded-full border-2 border-[#D49627] bg-[#610B0C]/30 flex items-center justify-center overflow-hidden">
 
                     {/* Replace with actual image: */}
-                     <img src="/barong.png" alt="Gentlemen barong" className="h-full w-full object-cover" />
+                     <img src="/2.png" alt="Gentlemen barong" className="h-full w-full object-cover" />
 
                     {/* <span className="text-xs text-[#D49627]/60">Image</span> */}
 
@@ -203,7 +203,7 @@ export default function DressCode() {
                   <div className="h-24 w-24 rounded-full border-2 border-[#C15E63] bg-[#610B0C]/30 flex items-center justify-center overflow-hidden">
 
                     {/* Replace with actual image:  */}
-                    <img src="/avoid.png" alt="Items to avoid" className="h-full w-full object-cover" />
+                    <img src="/3.png" alt="Items to avoid" className="h-full w-full object-cover" />
 
                     {/* <span className="text-xs text-[#C15E63]/60">Image</span> */}
 
