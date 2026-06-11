@@ -161,7 +161,7 @@ export default function RSVPForm() {
               </p>
             </FormField>
 
-            <FormField label="Attendance" htmlFor="attendance">
+            <FormField label="Will you be joining us?" htmlFor="attendance">
               <select
                 id="attendance"
                 name="attendance"
@@ -171,8 +171,8 @@ export default function RSVPForm() {
                 }
                 className={inputClass}
               >
-                <option value="yes">Yes, Attending</option>
-                <option value="no">No, Regretfully Decline</option>
+                <option value="yes">Joyfully Accepts</option>
+                <option value="no">Regretfully Declines</option>
               </select>
             </FormField>
 

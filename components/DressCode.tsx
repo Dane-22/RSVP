@@ -126,55 +126,103 @@ export default function DressCode() {
 
             <div className="space-y-6">
 
-              <div>
+              <div className="flex items-start gap-6">
 
-                <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#EFCC74] mb-2">
+                <div className="flex-shrink-0">
 
-                  Ladies
+                  <div className="h-24 w-24 rounded-full border-2 border-[#D49627] bg-[#610B0C]/30 flex items-center justify-center overflow-hidden">
 
-                </h3>
+                    {/* Replace with actual image: <img src="/path/to/ladies-dress.jpg" alt="Ladies dress" className="h-full w-full object-cover" /> */}
 
-                <p className="text-[#ffffff]/90 leading-relaxed">
+                    <span className="text-xs text-[#D49627]/60">Image</span>
 
-                  Elegant dresses or Gowns
+                  </div>
 
-                </p>
+                </div>
 
-              </div>
+                <div className="flex-1">
 
-              
+                  <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#EFCC74] mb-2">
 
-              <div>
+                    Ladies
 
-                <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#EFCC74] mb-2">
+                  </h3>
 
-                  Gentlemen
+                  <p className="text-[#ffffff]/90 leading-relaxed">
 
-                </h3>
+                    Elegant dresses or Gowns
 
-                <p className="text-[#ffffff]/90 leading-relaxed">
+                  </p>
 
-                  Barongs, suits, blazers or formal long-sleeved attire
-
-                </p>
+                </div>
 
               </div>
 
               
 
-              <div>
+              <div className="flex items-start gap-6">
 
-                <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#EFCC74] mb-2">
+                <div className="flex-shrink-0">
 
-                  Please Avoid
+                  <div className="h-24 w-24 rounded-full border-2 border-[#D49627] bg-[#610B0C]/30 flex items-center justify-center overflow-hidden">
 
-                </h3>
+                    {/* Replace with actual image: <img src="/path/to/gentlemen-barong.jpg" alt="Gentlemen barong" className="h-full w-full object-cover" /> */}
 
-                <p className="text-[#ffffff]/90 leading-relaxed">
+                    <span className="text-xs text-[#D49627]/60">Image</span>
 
-                  White, ivory, cream, champagne, denim, shorts, and slippers
+                  </div>
 
-                </p>
+                </div>
+
+                <div className="flex-1">
+
+                  <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#EFCC74] mb-2">
+
+                    Gentlemen
+
+                  </h3>
+
+                  <p className="text-[#ffffff]/90 leading-relaxed">
+
+                    Barongs, suits, blazers or formal long-sleeved attire
+
+                  </p>
+
+                </div>
+
+              </div>
+
+              
+
+              <div className="flex items-start gap-6">
+
+                <div className="flex-shrink-0">
+
+                  <div className="h-24 w-24 rounded-full border-2 border-[#C15E63] bg-[#610B0C]/30 flex items-center justify-center overflow-hidden">
+
+                    {/* Replace with actual image: <img src="/path/to/avoid-items.jpg" alt="Items to avoid" className="h-full w-full object-cover" /> */}
+
+                    <span className="text-xs text-[#C15E63]/60">Image</span>
+
+                  </div>
+
+                </div>
+
+                <div className="flex-1">
+
+                  <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#EFCC74] mb-2">
+
+                    Please Avoid
+
+                  </h3>
+
+                  <p className="text-[#ffffff]/90 leading-relaxed">
+
+                    White, ivory, cream, champagne, denim, shorts, and slippers
+
+                  </p>
+
+                </div>
 
               </div>
 
