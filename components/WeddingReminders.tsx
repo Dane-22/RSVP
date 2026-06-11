@@ -79,7 +79,7 @@ export default function WeddingReminders() {
                   <div className="flex-shrink-0">
                     <div className="h-14 w-14 rounded-full border-2 border-[#D49627] bg-[#610B0C]/30 flex items-center justify-center overflow-hidden">
                       <img
-                        src=""
+                        src={undefined}
                         alt={reminder.title}
                         className="h-full w-full object-cover"
                       />
