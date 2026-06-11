@@ -47,7 +47,7 @@ export default function Story() {
       description: "What started as friendship became something more.",
     },
     {
-      year: "January 13, 2027",
+      year: "January 13, 2017",
       title: "",
       description: "We officially became a couple.",
     },
