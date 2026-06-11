@@ -100,22 +100,22 @@ export default function RSVPForm() {
           <h2 className="font-serif text-4xl font-light sm:text-5xl text-[#EFCC74] mb-4">
             RSVP
           </h2>
-          <div className="gold-divider mx-auto mb-6 max-w-xs" />
-          <p className="mt-4 text-sm leading-relaxed text-[#fdf6ee]/90 sm:text-base mb-6">
-            We would be honored to celebrate with you
+          <div className="gold-divider mx-auto mb- max-w-xs" />
+          <p className="mt-4 text-sm leading-relaxed text-[#fdf6ee]/90 sm:text-base mb-2">
+            We would be honored to celebrate with you!
           </p>
-          <p className="text-sm leading-relaxed text-[#fdf6ee]/80 sm:text-base mb-2">
-            Please respond on or Before
+          <p className="text-sm leading-relaxed text-[#fdf6ee]/80 sm:text-base mb-1">
+            Please respond on or before
           </p>
-          <p className="font-serif text-lg sm:text-xl text-[#EFCC74] mb-4">
+          <p className="font-serif font-bold text-lg sm:text-xl text-[#EFCC74] mb-4">
             OCTOBER 31, 2026
           </p>
           <p className="text-xs tracking-[0.3em] text-[#EFCC74] uppercase mb-6">
             WE HAVE RESERVED 1 SEAT IN YOUR HONOR
           </p>
-          <div className="gold-divider mx-auto mb-6 max-w-xs" />
+          <div className="gold-divider mx-auto mb-4 max-w-xs" />
           <p className="text-sm leading-relaxed text-[#fdf6ee]/80 sm:text-base">
-            We can&apos;t wait to celebrate with you!
+            Your presence would mean so much to us.
           </p>
         </div>
 
@@ -181,8 +181,8 @@ export default function RSVPForm() {
                 }
                 className={inputClass}
               >
-                <option value="yes">Joyfully Accepts</option>
-                <option value="no">Regretfully Declines</option>
+                <option value="yes">Yes, I'll be there</option>
+                <option value="no">No, I'm sorry</option>
               </select>
             </FormField>
 
