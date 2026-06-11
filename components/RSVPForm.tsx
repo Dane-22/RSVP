@@ -115,7 +115,7 @@ export default function RSVPForm() {
           </p>
           <div className="gold-divider mx-auto mb-6 max-w-xs" />
           <p className="text-sm leading-relaxed text-[#fdf6ee]/80 sm:text-base">
-            We can't wait to celebrate with you!
+            We can&apos;t wait to celebrate with you!
           </p>
         </div>
 
