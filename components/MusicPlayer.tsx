@@ -1,11 +1,10 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import { Play, Pause } from 'lucide-react';
 
 export default function MusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [progress, setProgress] = useState(0);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   const togglePlay = () => {
@@ -20,12 +19,6 @@ export default function MusicPlayer() {
   };
 
 
-  const handleTimeUpdate = () => {
-    if (audioRef.current) {
-      const progress = (audioRef.current.currentTime / audioRef.current.duration) * 100;
-      setProgress(progress);
-    }
-  };
 
   return (
     <div className="fixed bottom-6 right-6 z-50 bg-transparent backdrop-blur-sm p-4 flex items-center">
@@ -33,7 +26,6 @@ export default function MusicPlayer() {
         ref={audioRef}
         src="/Turning_Page__Instrumental_(128k).mp3"
         loop
-        onTimeUpdate={handleTimeUpdate}
       />
       
       <button
