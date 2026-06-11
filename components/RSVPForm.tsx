@@ -192,7 +192,7 @@ export default function RSVPForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="mt-8 w-full rounded-full bg-gradient-to-r from-[#D49627] via-[#e8b04a] to-[#D49627] px-8 py-4 text-sm font-medium tracking-[0.25em] text-[#610B0C] uppercase transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-70"
+            className="mt-8 w-full rounded-full bg-[#D49627] bg-gradient-to-r from-[#D49627] via-[#e8b04a] to-[#D49627] px-8 py-4 text-sm font-medium tracking-[0.25em] text-[#610B0C] uppercase transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-70"
           >
             {isSubmitting ? "Sending..." : "Send RSVP"}
           </button>
