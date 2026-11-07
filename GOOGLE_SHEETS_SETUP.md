@@ -153,29 +153,6 @@ APPS_SCRIPT_URL=https://script.google.com/macros/s/AKfycbxT3Xy7Z9v1W2X/exec
 
 ## 6. Troubleshooting
 
-### Issue: "Wala kang pahintulot na i-access ang hiniling na dokumento" / "You do not have permission to access the requested document"
-
-**Cause:**
-1. The Web App was deployed with **"Execute as"** set to **"User accessing the web app"** instead of **"Me"**.
-2. The Google Apps Script has not been authorized to access your Google Sheet.
-3. The Apps Script project is a standalone project instead of container-bound inside the Google Sheet (via Extensions → Apps Script).
-
-**Solution:**
-1. Open your Google Sheet, click **Extensions** → **Apps Script**.
-2. Paste the updated `Code.gs` code (which includes `testSetup`).
-3. Select `testSetup` from the function dropdown at the top toolbar and click **Run**.
-4. If prompted with **"Authorization Required"** (Kailangan ng Pahintulot):
-   - Click **Review Permissions**.
-   - Select your Google account.
-   - Click **Advanced** (Mas Pinasulong) → **Go to RSVP Form Handler (unsafe)**.
-   - Click **Allow** (Payagan).
-5. In the top-right, click **Deploy** → **Manage deployments**.
-6. Click the **Edit (pencil icon)** on your active deployment:
-   - Set **Execute as** to **"Me"** (your Google email address).
-   - Set **Who has access** to **"Anyone"**.
-   - Under **Version**, select **"New version"**.
-   - Click **Deploy**.
-
 ### Issue: "Server configuration error. Missing Apps Script URL"
 
 **Cause:** The `APPS_SCRIPT_URL` environment variable is missing or empty.
