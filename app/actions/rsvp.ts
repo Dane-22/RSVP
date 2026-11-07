@@ -42,7 +42,24 @@ export async function submitRSVP(
     const result = await response.json();
 
     if (!result.success) {
-      throw new Error(result.error || "Unknown error from Apps Script");
+      console.error("Apps Script returned an error:", result.error);
+      const errorMsg = String(result.error || "");
+      if (
+        errorMsg.toLowerCase().includes("pahintulot") ||
+        errorMsg.toLowerCase().includes("permission")
+      ) {
+        return {
+          success: false,
+          message:
+            "Google Sheets permission error: The script does not have access to your spreadsheet. Please ensure the Apps Script Web App is deployed with 'Execute as: Me' and has been authorized.",
+        };
+      }
+
+      return {
+        success: false,
+        message:
+          "Something went wrong while saving your RSVP. Please try again in a moment.",
+      };
     }
 
     return {

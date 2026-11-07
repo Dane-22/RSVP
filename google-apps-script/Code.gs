@@ -66,3 +66,9 @@ function doGet(e) {
     })
   ).setMimeType(ContentService.MimeType.JSON);
 }
+
+// Test function: Run this inside the Apps Script editor to authorize permissions and verify sheet connection
+function testSetup() {
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  Logger.log("Successfully connected to sheet: " + sheet.getName());
+}
